@@ -16,7 +16,7 @@ class DisquetteService {
     if(response.statusCode == 200) {
       final List<dynamic> jsonList = jsonDecode(response.body);
 
-      print('Data fetched');
+      // print('Data fetched');
 
       return jsonList.map((json) => DisquetteModel.fromJson(json)).toList();
     } else {
